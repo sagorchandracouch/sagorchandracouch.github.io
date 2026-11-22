@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Sagor Chandra Couch, Computer Science and Engineering student at Southeast University.">
+  <title>Sagor Chandra Couch | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="Sagor home">SC<span>.</span></a>
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="#home" class="active-link">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#focus">CS Focus</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">☼</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">COMPUTER SCIENCE & ENGINEERING</p>
+          <p class="hello">HELLO, I'M</p>
+          <h1>Sagor Chandra<br><span>Couch.</span></h1>
+          <h2>CSE Student <span class="hero-university">at Southeast University</span></h2>
+          <p class="hero-description">A Computer Science and Engineering student at Southeast University, interested in software development, programming and building practical solutions with technology.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="button button-primary">Explore my work <span>↗</span></a>
+            <a href="#contact" class="button button-ghost">Let's talk</a>
+            <a href="cv.pdf" class="button button-ghost" download>Download CV <span>↓</span></a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="profile-frame">
+            <img class="profile-photo" src="profile.png" alt="Sagor Chandra Couch standing in a black blazer in front of a brick wall">
+            <div class="frame-caption"><span>SAGOR CHANDRA COUCH</span><span>CSE STUDENT</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-index container"><span>01 — INTRODUCTION</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <div class="tech-strip" aria-label="Technology interests">
+      <div class="container tech-strip-inner"><span>ALWAYS LEARNING</span><b>JAVA</b><i>✳</i><b>PYTHON</b><i>✳</i><b>WEB</b><i>✳</i><b>DATABASES</b><i>✳</i><b>NETWORKING</b></div>
+    </div>
+
+    <section id="about" class="about section-pad">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Curious mind.<br><span>Practical ideas.</span></h2></div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="lead">I'm Sagor, a Computer Science and Engineering student who enjoys understanding how technology works and using it to solve practical problems.</p>
+            <p>I study Computer Science and Engineering at Southeast University, Bangladesh. I enjoy learning programming languages, solving problems and developing practical projects. My goal is to become a professional software engineer and keep improving my technical skills.</p>
+          </div>
+          <div class="profile-panel reveal">
+            <div class="panel-top"><span>PROFILE DETAILS</span><span>✳</span></div>
+            <div class="detail-row"><span>Full name</span><strong>Sagor Chandra Couch</strong></div>
+            <div class="detail-row"><span>University</span><strong>Southeast University</strong></div>
+            <div class="detail-row"><span>Department</span><strong>Computer Science & Engineering</strong></div>
+            <div class="detail-row"><span>Academic status</span><strong>Undergraduate student</strong></div>
+            <div class="detail-row"><span>Graduation</span><strong>2027 (Expected)</strong></div>
+            <div class="detail-row"><span>Email</span><strong><a href="mailto:sonatonsagor@gmail.com">sonatonsagor@gmail.com</a></strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills section-pad">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow">MY TOOLKIT</p><h2>Skills & <span>interests.</span></h2><p class="heading-note">Tools and areas I am learning and working with.</p></div>
+        <div class="skills-grid">
+          <div class="skill-card reveal"><span>01</span><strong>C Programming</strong><i>C</i></div>
+          <div class="skill-card reveal"><span>02</span><strong>Java</strong><i>J</i></div>
+          <div class="skill-card reveal"><span>03</span><strong>Python</strong><i>Py</i></div>
+          <div class="skill-card reveal"><span>04</span><strong>HTML</strong><i>5</i></div>
+          <div class="skill-card reveal"><span>05</span><strong>CSS</strong><i>3</i></div>
+          <div class="skill-card reveal"><span>06</span><strong>MySQL</strong><i>DB</i></div>
+          <div class="skill-card reveal"><span>07</span><strong>Graphic Design</strong><i>✳</i></div>
+          <div class="skill-card reveal"><span>08</span><strong>Digital Marketing</strong><i>↗</i></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="focus" class="focus section-pad">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow">BEYOND THE CODE</p><h2>My computer science <span>focus.</span></h2><p class="heading-note">Core areas I am exploring through coursework, practice and projects.</p></div>
+        <div class="focus-grid">
+          <article class="focus-card reveal"><span class="focus-number">01</span><div class="focus-icon">&lt;/&gt;</div><h3>Programming & Problem Solving</h3><p>Building a strong foundation with programming, logic, algorithms and step-by-step problem solving.</p><div class="focus-tags"><span>Java</span><span>C</span><span>Python</span><span>Algorithms</span></div></article>
+          <article class="focus-card reveal"><span class="focus-number">02</span><div class="focus-icon">▦</div><h3>Web & Software Development</h3><p>Learning how websites and software applications are planned, designed and developed.</p><div class="focus-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span></div></article>
+          <article class="focus-card reveal"><span class="focus-number">03</span><div class="focus-icon">⌘</div><h3>Networking & Systems</h3><p>Exploring computer networks, IP addressing, VLANs, routing, and how connected systems communicate.</p><div class="focus-tags"><span>Networking</span><span>Packet Tracer</span><span>Linux concepts</span></div></article>
+          <article class="focus-card reveal"><span class="focus-number">04</span><div class="focus-icon">⌁</div><h3>Data & Intelligent Systems</h3><p>Working with data analysis and exploring how machine learning can help solve real-world problems.</p><div class="focus-tags"><span>Data Analysis</span><span>Python</span><span>Machine Learning</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="education section-pad">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow">THE LEARNING JOURNEY</p><h2>My <span>education.</span></h2></div>
+        <article class="education-card reveal">
+          <div class="education-year">2022 — 2027</div>
+          <div><p class="eyebrow">UNDERGRADUATE</p><h3>Bachelor of Science in Computer Science & Engineering</h3><h4>Southeast University, Bangladesh</h4><p>Currently in 10th semester · Expected graduation: 2027</p></div>
+          <span class="education-mark">SEU</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section-pad">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow">SELECTED WORK</p><h2>Things I've <span>worked on.</span></h2><p class="heading-note">Academic and practical projects that reflect what I am learning.</p></div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-top"><span>01 / EMBEDDED SYSTEM</span><span>↗</span></div>
+            <div class="project-visual waste-visual"><div class="bin-icon">▤</div><span>SMART<br>WASTE<br>MONITOR</span><small>ARDUINO PROJECT</small></div>
+            <div class="project-body"><h3>Smart Waste Monitor System</h3><p>An Arduino-based smart dustbin designed to monitor waste levels and improve waste management through automated lid control and sensor-based monitoring.</p>
+              <ul class="feature-list"><li>Automatic lid opening and closing</li><li>Ultrasonic waste-level monitoring</li><li>LCD percentage display and alerts</li></ul>
+              <div class="tech-stack"><span>Arduino</span><span>C++</span><span>Ultrasonic Sensor</span><span>LCD</span></div>
+              <button class="text-button" type="button" data-project="waste">View project details <span>↗</span></button>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-top"><span>02 / MACHINE LEARNING RESEARCH</span><span>↗</span></div>
+            <div class="project-visual dengue-visual"><div class="chart-lines"><i></i><i></i><i></i><i></i><i></i></div><span>DATA<br>TO<br>INSIGHT</span><small>DENGUE RESEARCH</small></div>
+            <div class="project-body"><h3>Dengue Outbreak Prediction</h3><p>A research project focused on developing a spatiotemporal machine learning framework for 7-day and 10-day dengue outbreak prediction using longitudinal surveillance data from Bangladesh.</p>
+              <ul class="feature-list"><li>Bangladesh dengue surveillance data</li><li>Longitudinal data analysis</li><li>7-day and 10-day prediction focus</li></ul>
+              <div class="tech-stack"><span>Python</span><span>Machine Learning</span><span>Data Analysis</span><span>Pandas</span></div>
+              <button class="text-button" type="button" data-project="dengue">View project details <span>↗</span></button>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-top"><span>03 / COMPUTER NETWORKING</span><span>↗</span></div>
+            <div class="project-visual network-visual"><div class="network-nodes"><i>R1</i><b></b><i>SW</i><b></b><i>R2</i></div><span>CONNECTED<br>NETWORKS</span><small>CISCO PACKET TRACER</small></div>
+            <div class="project-body"><h3>Enterprise Network Design</h3><p>A Cisco Packet Tracer networking project with two router sections, multiple VLANs, server services and controlled communication between departments.</p>
+              <ul class="feature-list"><li>VLAN segmentation for departments</li><li>Router-on-a-stick inter-VLAN routing</li><li>DNS, web server and access control rules</li></ul>
+              <div class="tech-stack"><span>Cisco Packet Tracer</span><span>VLAN</span><span>Routing</span><span>ACL</span></div>
+              <button class="text-button" type="button" data-project="network">View project details <span>↗</span></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-pad">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal"><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let's make<br><span>something good.</span></h2><p>I'm always interested in learning, collaborating and exploring new opportunities. Feel free to send me a message.</p><a class="email-link" href="mailto:sonatonsagor@gmail.com">sonatonsagor@gmail.com ↗</a><p class="location-line">BASED IN BANGLADESH</p></div>
+        <form id="contact-form" class="contact-form reveal">
+          <label for="sender-name">Your name</label><input type="text" id="sender-name" name="name" placeholder="Enter your name" required>
+          <label for="sender-email">Your email</label><input type="email" id="sender-email" name="email" placeholder="you@example.com" required>
+          <label for="subject">Subject</label><input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+          <label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          <button class="button button-primary submit-button" type="submit">Send message <span>↗</span></button>
+          <p class="form-note">Your email app will open with the message ready to send.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="logo" href="#home">SC<span>.</span></a><p>© <span id="year"></span> Sagor Chandra Couch. All rights reserved.</p><a href="#home">BACK TO TOP ↑</a></div></footer>
+
+  <div id="project-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content"><button class="modal-close" type="button" aria-label="Close dialog">×</button><p class="eyebrow">PROJECT DETAILS</p><h2 id="modal-title"></h2><p id="modal-description"></p><div class="modal-extra" id="modal-extra"></div></div>
+  </div>
+  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+</body>
+</html>
