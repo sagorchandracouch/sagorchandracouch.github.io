@@ -143,7 +143,7 @@ document.addEventListener("keydown", event => {
 
 // Light/dark theme with safe storage fallback
 const themeToggle = $("#theme-toggle");
-const storageKey = "sagor-portfolio-theme";
+const storageKey = "sagor-portfolio-theme-v6";
 
 function setTheme(theme) {
   document.body.classList.toggle("dark-theme", theme === "dark");
@@ -156,7 +156,7 @@ function setTheme(theme) {
 
 let savedTheme = "light";
 try {
-  savedTheme = localStorage.getItem(storageKey) || "dark";
+  savedTheme = localStorage.getItem(storageKey) || "light";
 } catch (error) {
   // Storage may be disabled; the page still works with the default theme.
 }
