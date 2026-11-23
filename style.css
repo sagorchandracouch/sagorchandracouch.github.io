@@ -226,3 +226,113 @@ body{background:var(--bg);color:var(--text)}
 @media(max-width:900px){.hero-grid{gap:30px}.profile-frame{width:300px}.profile-photo{height:390px}.nav-links{gap:13px}.nav-links a{font-size:10px}}
 @media(max-width:700px){.hero{padding-top:55px;background:var(--bg)}.hero-grid{gap:22px}.hero h1{font-size:clamp(48px,12vw,68px);letter-spacing:-3.5px}.hero-visual{height:auto;margin:22px 0 0}.profile-frame{width:min(275px,78%)}.profile-photo{height:345px}.hero-index{margin-top:28px}.section-pad{padding:76px 0}.nav-links a{font-size:12px}.button{padding:11px 14px}}
 @media(max-width:420px){.hero h1{font-size:47px;letter-spacing:-3px}.profile-frame{width:235px}.profile-photo{height:300px}.frame-caption{font-size:7px}.about-copy .lead{font-size:19px}}
+
+/* V7 refinement — softer powder blue, warmer neutrals, stronger text contrast */
+:root{
+  --bg:#edf1f2;
+  --surface:#e1e9ec;
+  --surface-2:#d5e2e7;
+  --text:#182b38;
+  --muted:#405563;
+  --accent:#86b4c9;
+  --line:#c2d1d8;
+  --header:rgba(237,241,242,.97);
+  --shadow:0 16px 38px rgba(35,58,70,.10);
+}
+body.dark-theme{
+  --bg:#202a30;
+  --surface:#293840;
+  --surface-2:#334650;
+  --text:#f0f5f6;
+  --muted:#c0cdd2;
+  --accent:#9bc5d7;
+  --line:#455963;
+  --header:rgba(32,42,48,.97);
+  --shadow:0 18px 44px rgba(0,0,0,.28);
+}
+/* Improve readability in the light theme: avoid pale gray body copy */
+body{color:var(--text)}
+.hero-description,.about-copy>p:last-child,.heading-note,
+.detail-row>span,.project-top,.social-links>span,
+.modal-content>p:not(.eyebrow),.modal-extra,
+.footer,.frame-caption{color:var(--muted)}
+.nav-links a{color:var(--muted)}
+.social-links a{color:var(--text)}
+.hero h2,.hero-university{color:var(--text)}
+.button-primary{background:var(--accent);border-color:var(--accent);color:#152b38}
+.button-primary:hover{background:transparent;color:var(--text)}
+.button-ghost{background:transparent;color:var(--text)}
+.profile-frame{background:var(--surface);border-color:var(--line);box-shadow:0 18px 42px rgba(63,76,80,.14)}
+.profile-photo{filter:saturate(.90) contrast(1.04)}
+.about,.education,.contact{background:var(--surface)}
+.profile-panel,.education-card,.contact-form input,.contact-form textarea{background:var(--bg)}
+.skill-card,.focus-card,.project-card{background:var(--surface)}
+.skill-card:hover,.focus-card:hover{background:var(--surface-2)}
+.project-top{background:var(--surface)}
+.tech-strip,.footer{background:var(--surface)}
+.contact-form input,.contact-form textarea{color:var(--text)}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:var(--muted);opacity:1}
+.back-to-top{background:var(--accent);border-color:var(--accent);color:#152b38}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+
+/* V8: Correct theme variables for the actual light-theme class */
+body:not(.dark-theme){
+  --bg:#edf1f2;
+  --surface:#e2eaed;
+  --surface-2:#d7e3e8;
+  --text:#182b38;
+  --muted:#405563;
+  --accent:#8fb9cc;
+  --line:#c4d3d9;
+  --header:rgba(237,241,242,.97);
+  --shadow:0 16px 38px rgba(35,58,70,.10);
+}
+body.dark-theme{
+  --bg:#202a30;
+  --surface:#293840;
+  --surface-2:#334650;
+  --text:#f0f5f6;
+  --muted:#c0cdd2;
+  --accent:#9bc5d7;
+  --line:#455963;
+  --header:rgba(32,42,48,.97);
+  --shadow:0 18px 44px rgba(0,0,0,.28);
+}
+body:not(.dark-theme) .hero-description,
+body:not(.dark-theme) .about-copy p,
+body:not(.dark-theme) .heading-note,
+body:not(.dark-theme) .detail-row>span,
+body:not(.dark-theme) .project-top,
+body:not(.dark-theme) .social-links>span,
+body:not(.dark-theme) .modal-content>p:not(.eyebrow),
+body:not(.dark-theme) .modal-extra,
+body:not(.dark-theme) .footer,
+body:not(.dark-theme) .frame-caption,
+body:not(.dark-theme) .nav-links a{
+  color:#405563;
+}
+body:not(.dark-theme) .hero h2,
+body:not(.dark-theme) .hero-university,
+body:not(.dark-theme) .social-links a,
+body:not(.dark-theme) .contact-form label{
+  color:#182b38;
+}
+body:not(.dark-theme) .button-primary,
+body:not(.dark-theme) .back-to-top{
+  background:#8fb9cc;
+  border-color:#8fb9cc;
+  color:#152b38;
+}
+body:not(.dark-theme) .button-ghost{
+  color:#182b38;
+}
+body:not(.dark-theme) .contact-form input,
+body:not(.dark-theme) .contact-form textarea{
+  color:#182b38;
+}
+body:not(.dark-theme) .contact-form input::placeholder,
+body:not(.dark-theme) .contact-form textarea::placeholder{
+  color:#526875;
+  opacity:1;
+}
